@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;/* absolute dersek yazi varsa dikkate almaz üzerinden gecer. relative yazi varsa oradan px hesabi yapar
+            sticky sayfa gözukugu kadar hareket eder sayfayla beraber harekt eder. fixed sayfa asagi gitsede göözükmeye devam eder. static te hareket etmez sad
+            sadece oldugu yerde renk degistirir. */
+            -webkit-animation-name: example; /* safari 4.0-8.0 */
+            -webkit-animation-duration: 4s; /* safari 4.0-8.0 */
+            -webkit-animation-iteration-count: infinite; /* safari 4.0-8.0 */
+            animation-name: example;
+            animation-duration: 4s;/* hareketi tamamlama süresi*/
+            animation-iteration-count: infinite;/* initial, inherit ve unset (FARKLARI NE?)döngü tamamlaninca biter.infinite hep devam eder. sayi girersek o kadar devam eder.*/
+            animation-direction: alternate;/* alternate yapinca döngü tamamlaninca tersine devam eder.reverse ters yönde.*/
+        }
+        /*Safari 4.0-8.0 */
+        @-webkit-keyframes example { /* example kismini üstteki animation name ile ayni olmasi gerekir yoksa calismaz*/
+            0%   {background-color: red; left: 0px; top: 0px;}
+            25%  {background-color: yellow; left: 200px; top: 0px;}
+            50%  {background-color: blue; left: 200px; top: 200px;}
+            75%  {background-color: green; left: 0px; top: 200px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+        /* standart syntax*/
+        @keyframes example {
+            0%  {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 200px; top: 0px;}
+            50% {background-color: blue; left: 200px; top: 200px;}
+            75% {background-color: green; left: 0px; top: 200px;}
+            100%{background-color: red; left: 0px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <p>ksamdasldaldmadkadökasdmasköda</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi doloremque odio quae! Asperiores hic, sequi cumque impedit quisquam id dolore quod at aspernatur? Impedit ducimus quos molestias perferendis, ipsam totam?
+    Ipsam itaque cum, fugit pariatur recusandae excepturi temporibus voluptate hic harum. Nemo, nisi deleniti. Ea, corporis non nemo repudiandae, sunt ad ex voluptas commodi omnis consequuntur inventore, ipsam necessitatibus minima.
+    Reprehenderit minima ipsum temporibus consequatur commodi nesciunt eligendi, consequuntur fugit porro quibusdam. Expedita repellat ea laudantium, quasi quisquam reprehenderit voluptate sequi numquam quidem aspernatur fuga ipsum est sit eveniet aut.
+    Provident quod id veritatis corrupti aliquam ea, quas atque commodi aut molestias obcaecati ratione, nesciunt quisquam dolores animi expedita quis aperiam iusto tempore illum magni ipsa. Hic, reiciendis quas! Vero.
+    Ipsam voluptates a earum, natus cupiditate suscipit soluta nostrum perspiciatis, assumenda praesentium id quisquam excepturi doloribus repellendus dolore, commodi corporis saepe asperiores ex? Beatae facilis harum et dolorem, at perferendis.
+    Tempora assumenda odio ratione, similique aliquid error, ut asperiores ipsam itaque beatae omnis! Impedit rem suscipit architecto voluptatibus harum cum facere quis illum dolorem quo eum, sapiente exercitationem veniam ut?
+    Aperiam provident temporibus repellat dolores doloremque accusantium obcaecati reprehenderit. Necessitatibus est possimus rem ut aliquam repudiandae optio distinctio beatae voluptatum. Explicabo sequi accusamus nihil sunt. Perspiciatis voluptates necessitatibus voluptas sit?
+    Veniam accusamus laboriosam excepturi dignissimos eos, vel consequuntur atque ea numquam aliquam cumque quidem architecto pariatur aspernatur cum eveniet doloremque temporibus saepe ex odio enim beatae eligendi. Quibusdam, amet quam.
+    Autem officiis ut commodi maxime omnis, minus ea debitis voluptates, inventore blanditiis cumque sapiente beatae neque itaque. Incidunt officia eaque maiores reprehenderit repudiandae, inventore aperiam omnis quaerat eius voluptatibus nemo.
+    Laborum illo quos quisquam laboriosam, minima, assumenda, exercitationem doloribus accusantium vitae ab quibusdam! Fugiat voluptates reiciendis eum, nisi repellat praesentium adipisci qui rem explicabo non. Nam libero quasi iusto cum.</p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div>acaba</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque hic porro voluptatem at aliquid deleniti quaerat facilis velit vero adipisci vitae eos tempora, ab culpa omnis sint itaque delectus reprehenderit.
+    Alias temporibus in, perferendis nulla cupiditate et quod ex iure maxime! Sunt pariatur consectetur perferendis velit ad at saepe quaerat nulla vitae molestiae? Unde alias error labore amet. Magnam, error.
+    Et assumenda quae suscipit minus. Vel quisquam consectetur earum pariatur sit cum quis? Impedit eum, dolorum, quidem accusantium eveniet voluptates excepturi distinctio possimus omnis unde quibusdam, quia odio voluptate esse!
+    Corporis perspiciatis nulla veritatis, iure voluptate quis alias inventore molestiae possimus eveniet illo dicta praesentium sit esse, nemo provident corrupti at et ducimus architecto pariatur aspernatur! Eius sint incidunt cum.
+    Voluptas minima nemo quam numquam esse eius! Eaque delectus necessitatibus vitae saepe qui vel cupiditate fugiat! Laudantium, ab. Neque pariatur cupiditate dolorem modi, harum sunt consequuntur deserunt ad nobis repellendus.
+    Provident sed quas ex. Suscipit dignissimos necessitatibus aspernatur nihil optio inventore iste ipsa doloribus libero eaque saepe amet excepturi, odit accusamus obcaecati a porro ab deserunt sunt. Aspernatur, nihil enim?
+    Amet assumenda nesciunt perspiciatis sequi officiis saepe soluta, harum omnis sunt nobis et dolor dolorem! Accusamus at dolore odio! Quaerat consectetur ut ea incidunt ab explicabo, reiciendis ducimus impedit dolores?
+    Voluptate, odio aperiam. Reprehenderit molestias cupiditate sint quod dignissimos laborum illo? Totam ratione vitae corporis sit. Modi nostrum, laudantium porro enim tempora dolores a sapiente neque amet nulla omnis facilis.
+    At nihil non, ipsam inventore excepturi fuga! Quidem autem maiores eveniet quae, cum omnis ipsum magni dolor id illum soluta amet. Asperiores, soluta voluptate. Soluta suscipit illum voluptas eius repellendus!
+    Nisi enim consequatur sunt vitae ab, repellat, odit dolore rem aliquam corrupti impedit! Consequatur, rem, blanditiis voluptatem dolorem beatae molestiae, eveniet deleniti accusantium temporibus sed possimus amet sunt nostrum exercitationem.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui impedit alias nemo illum assumenda quidem ex! Adipisci facilis blanditiis voluptatum excepturi fugit, recusandae modi porro praesentium autem, id doloribus iusto.
+    Nihil perspiciatis reprehenderit quod alias explicabo a ab suscipit sed soluta sequi debitis neque libero impedit, magni quae eligendi placeat! Repudiandae dolorem tenetur eos consequuntur ab optio ullam quisquam non?
+    Atque nulla velit similique sint est, placeat nostrum natus, saepe expedita, officiis illum? Aspernatur consectetur accusantium quisquam explicabo, labore sequi debitis deleniti id non officiis? Dolorem quasi perspiciatis quos? Ipsa.
+    Optio ullam eligendi tempora cupiditate a repellendus iste voluptates? Molestiae fugit deserunt, iure ducimus, optio itaque ratione dignissimos modi amet facere nobis accusantium quis hic voluptas quidem tempore quod cupiditate?
+    Quis omnis, aliquid possimus perspiciatis, quod accusantium nihil maiores quas quam praesentium corporis a dolore soluta commodi facere error explicabo? Et nemo perspiciatis necessitatibus quaerat id iste distinctio fugit reiciendis.
+    Beatae nobis temporibus minima corporis maiores debitis? Dolores architecto numquam dolorem minus maiores, rerum doloribus fuga ut suscipit saepe laudantium mollitia officiis explicabo, laboriosam, esse commodi doloremque dicta nihil beatae!
+    Beatae perferendis cumque illum distinctio, facere provident nihil quam ullam illo eos nobis quas quaerat sequi rerum, enim mollitia praesentium quasi quibusdam ratione accusamus, vero ab ipsam? Impedit, distinctio exercitationem?
+    Debitis pariatur excepturi voluptas optio, ratione ut at tenetur, illum beatae explicabo aut minus! Cupiditate quibusdam aut, et veniam eum laborum deleniti, enim at hic ipsam repellat eveniet dolores amet.
+    Consequuntur debitis id hic rerum cum, totam beatae quibusdam voluptate nihil unde commodi nam quam soluta doloremque excepturi. Facere placeat iusto esse alias vero, id laborum ipsum omnis saepe voluptas!
+    Temporibus rerum blanditiis debitis maxime, sequi ipsa voluptate repellendus, facere sint molestias quam inventore ea accusamus, cum asperiores. Similique dolorum totam sunt ab ex, earum quo fugiat est libero modi?</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            -webkit-transition: width 2s, height 4s;/* safari 3.1-6.0 icin */ 
+            transition: width 2s, height 4s;/*transition burada div asagidaki hoverdan dolayi büyürken genislik 2 sn de yükseklik 4s büyümesini sagliyor*/
+        }/* transition üerine gelince calisacak yapilarda kullanilir.*/
+        div:hover {
+            width: 300px;
+            height: 300px;
+        }
+        .div1 {
+            width: 300px;
+            height: 100px;
+            border: 2px solid blue;
+            box-sizing: border-box;
+        }
+        .div2 {
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid blue;
+            box-sizing: border-box; /* burada border box ifadesi boxin dis boyutunun degismemsini sagliyor. örengin ben border i 20 px yaparsam normalde box büyüyecek ve gemisleyecek. ancak bu ifade olunca 20 de yapsak biyout degismeden ice dogru yapiyor.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>TRANSITIONS</h1>
+    <div></div>
+    <p><b>NOTE</b> BU özellik internet explorer 9 ve önceki süürmlerinde calismaz</p>
+    <p class="div1">DIV 1</p><br>
+    <p class="div2">DIV 2</p>
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!doctype html><!-- HTML5 standardi oldugunu gosterir-->
+<html lang="TR-tr">
+<!-- dil secenegi (HTML= HYPER TEXT MARKUP LANGUAGE)-->
+<head>
+    <!-- meta style lari icinde tanimlamlar-->
+    <meta charset="UTF-8"><!-- yazi karakter türü secimi icin(TR , Latin vs) -->
+    <meta name="keywords" content="Web,Developer,Entwickler,Design,">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0"><!-- responsive görünüs boyut zoom-->
+    <meta name="title" content="Web,Developer,java,html%,css3"><!-- SEO optimizayson (sadece sayfa icerikleri)-->
+    <meta name="Autor" content="Enes Yilmaz">
+    <meta name="description" content="Küresel Iklim Degisikligi">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Küresel Iklim Degisikligi Konferasi</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            height: 300px;
+            width: 80%;
+        }
+        table,tr,th,td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        th {
+            height: 10px;
+            color: white;
+            background-color:green;
+        }
+        th:hover {
+            height: 10px;
+            color: black;
+            background-color: white;
+        }
+        th:active {
+            height: 10px;
+            color: yellow;
+            background-color: white;
+        }
+        th:visited {
+            height: 10px;
+            color: green;
+            background-color: blue;
+        }
+        tr:nth-child(odd) {
+            background-color:#B2BABB;
+        }
+        tr:nth-child(even) {
+            background-color: bisque;
+        }
+        div.sticky {
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: greenyellow;
+            border: 2px solid green;
+        } /* burada position sticky yaptik artik div class=sticky olan divler de gecerli olacak. sticky sayfa asagi gittiginde yazinin 
+        yine asili kalmasini saglar. burda top asili kalacagi yukardan yukskelik demektir. position fixed yapip left top gibi degerler girince 
+        artik o yazi veya border sayfanin o kösesinde kalir ve sayfa asagi insede yeri degismez. relative kendi ayri alanini olusturur ve ona 
+        referans alarak ikinci bir girdi girilir yani top ve left degerleri girersek relative e göre alacaktir sayfaya göre degil. 
+        absolut tam koordonata sabitleme. static te sayfanin akisina göre konumlandirma*/
+        p:hover {
+            color: hotpink;
+        } /* artik p yapilarinin üzerine geldigimde pembe görünecek*/
+        p::first-line {
+            background-color: green;
+        } /* :: ile daha spesifik ayarlar yapilir. burada p girdilerinin sadece ilk satiri backroundu yesil olsun demis olduk.*/
+        .screen {
+            position: -webkit-sticky;
+            top: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+            z-index:-1;
+            box-shadow: 100px 10px 5px 20px grey;/* burada text gibi x,y,billurluk,gölgelendirme boyutu,renk*/
+        }/* buradaki z index -1 borderin alttaki yaziyi göstermsini saglar. tabiki burada screen class iyla cagirilan hersey de gecerli olacaktir.*/
+        h2 {
+            text-shadow: 1px 2px 10px red, 0 0 20px blue;
+        } 
+        
+        /* text shadow ifadesi text gölgelendirmedir. ilk deger x ikinci deger y eksenindeki kaymayi belirler. -y girdisi yukari,
+        -x girdisi sola kaydiri, 3. ifade blurluk 4. ifade ise rengi belirler.ayrica 2. bir efekt katmak icin , den sonra ikinci bir 4lu girilebilir*/
+        
+        #gradient1 {
+            height: 200px;
+            background-color: blue;
+            background-image: linear-gradient(yellow, blue);
+        }
+    </style>
+</head>
+
+<body style="margin-left: 200px;">
+    <h1 style="cursor: pointer;">Küresel Iklim Degisikligi</h1><!--cursor pointer yapinin üyerine gelince el cikmasini saglar imlec yerine-->
+    <hr><!-- 1 tane h1 iniz olsun sitenin bulunabilirligi icin (SEO)-->
+    <p class="screen"><b>Önlemler</b></p><br />
+    <div class="sticky" style="z-index:-1; text-align: center;">Position sticky kullanimi ve sonucu</div><!--position sticky kullanimi-->
+    <p style="border: 2px solid red; width: 100px; height: 100px; background-color: hotpink; position: fixed; left: 10px;">EKRANIN BU KISMI SABIT KALACAK POSITION FIXED DENEMESI</p>
+    <!-- psition fixed kullanmi-->
+    <p style="overflow: auto; width: 400px; height: 200px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ex quisquam quaerat numquam hic laudantium consequuntur, libero labore, eius odit voluptas, aliquid quis aperiam deleniti ipsum blanditiis at eveniet optio!
+    Aspernatur dolor et aut numquam maiores quod placeat pariatur eos possimus, ducimus ipsam deleniti animi temporibus! Atque corporis quae, accusamus labore perferendis officiis officia dolorum ipsa aut? Rem, placeat porro?
+    Error iste similique inventore vitae? Ipsam recusandae autem quibusdam! Explicabo nulla iste, similique iure natus ducimus labore aliquid modi! Nulla commodi cumque illo sed similique magnam inventore quo, laudantium iure?
+    Odit magni unde neque, tenetur sapiente exercitationem et vero, veritatis dolorem quam optio distinctio obcaecati consequuntur! Ipsam corporis rem cupiditate unde placeat cumque recusandae cum, amet ratione dolor qui in?
+    Fuga optio dolore corporis. Sapiente asperiores at cupiditate nam dolorum dolore voluptatum praesentium, fugiat ut obcaecati, nemo recusandae delectus eius consequuntur quod aspernatur incidunt modi necessitatibus vero velit doloremque. Ut.
+    Numquam dignissimos nihil natus ex sint, reprehenderit ipsa magnam cupiditate dolore dicta iure doloribus odio asperiores, sequi cumque omnis officia officiis quas quod! Eum nemo, accusantium optio animi itaque libero?
+    A autem voluptatum facere commodi dolorum voluptate laudantium vero quo placeat odit, ipsum, fuga, quasi temporibus dolorem asperiores provident fugiat vel tempore quibusdam! At magnam nulla dolorem mollitia ullam explicabo!
+    At veniam quae ab optio quibusdam aliquam nulla suscipit nesciunt, consectetur similique vel rerum, quisquam adipisci laudantium cupiditate ratione asperiores. Velit ipsam illo beatae, doloribus harum sapiente animi incidunt dolorem.
+    Perspiciatis nesciunt ab voluptatum id, minima sed minus voluptate in totam sit quaerat at aliquam. Alias tempora expedita quidem incidunt esse eius harum temporibus. Repellendus provident tempore quis culpa aliquid.
+    Enim alias porro aperiam quae, quasi, architecto rerum possimus in repellat, quod placeat necessitatibus quibusdam dolorem cum? Harum dolores et laudantium, quisquam repellendus, quidem eligendi voluptate ullam maxime expedita aliquid?</p>
+    <!-- overflow kullanimi-->   
+    <div id="gradient1" style="color: white; font-size: 50px; text-align: center; padding-top: 100px;">GRADIENT GIRDISI</div>
+    
+    <i>Uyarilar</i><br />
+    <big>Dikkat</big>
+    <br\>
+        <small>Akilinizda bulunsun</small><br />
+        <strong>Güclü yanlarimiz</strong><br />
+        <em>Zayif yanlarimiz</em><br />
+        <ins>Kesin dikkat etmemiz gereken kurallar</ins><br />
+        <del>Asla yapmamamiz gereken hatalar</del><br />
+        O<sub>3</sub> salinimi<br />
+        m<sup>2</sup> basina düsen CO<sub>2</sub> salinimi<br />
+        <mark>Bunlari aklimizdan cikartmayalim</mark><br />
+        <code>Degisik yazi tipi</code><br />
+        <pre>ab ba 
+            d       f
+        </pre><br><!-- pre komutu icine yazarsaniz yazi aynen yazdiginiz sekilde ekranda belirir-->
+        <address>adres yazmak icin</address><br>
+        <h2>Gelecekteki Dunyaya Etkileri</h2>
+        <hr><!-- 4 tane yazilabilir-->
+        <ul>
+            <li>Anasayfa</li>
+            <li>Hakkimizda</li>
+            <li>Aktiviteler</li>
+            <li>Projeler<ul>
+                    <li>Cevre Projeleri<ul>
+                            <li>Geri Donusum</li>
+                            <li>Su Kaynaklari</li>
+                            <li>Atik Kaynaginda Ayirimi</li>
+                            <li>Sera Gazlari</li>
+                        </ul>
+                    </li>
+                    <li>Yenilenebilir Enerji Projeleri</li>
+                    <li>Green Energy Project</li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <hr>
+        <h3>Alinmasi Gereken Önlemler</h3>
+        <hr><!-- h1 den h6 ya kadar ayni türde yazi boyutu kücülerek gider.-->
+        <ol>
+            <li>Elektrikli araclara gecis</li>
+            <li>Fabrikalarda gaz emisyonalrinin azaltilmasi</li>
+            <li>Parfum vb ürünlerde sera gazi etkisi yapacak maddelrein yasaklanmasi</li>
+            <li>Tarim ve Gida üretim asamalarinda salinim azaltilmasi</li>
+            <li>Yesillik alanalrin cogaltilmasi</li>
+            <li>Yüksek binalara izin verilmemesi</li>
+        </ol>
+        <hr>
+        <hr>
+        <h4>Ne kadar süremiz var?</h4>
+        <hr>
+        <ol type="i">
+            <li>Kisa vadeli Tedbirler icin </li>
+            <li>Uzun Vadeli Tedbirler icin</li>
+            <li>Acil alinmasi gereken tedbirler icin</li>
+            <li>Fabrikalar ve ozel sirketler icin</li>
+            <li>Devletin almasi gereken tedbirler icin</li>
+            <li>Uluslararasi duzeyde imzalanan anlasmalar icin</li>
+        </ol>
+        <hr>
+        <hr>
+        <h5>Ilk Nereden Baslanmali</h5>
+        <hr>
+        <ol type="a" start="3">
+            <li>Gerekli kanun ve yönetmelikler icin taslak hazirlanmasi</li>
+            <li>Gerekli emisyon degerlerine ulasmak icin muhendsilik hesap calismasi</li>
+            <li>Emisyon degeri en yuksek fabrikalar</li>
+            <li>Yesil alan hesaplamasinin yapilmasi</li>
+            <li>Elektrikli araclar icin devlet tesvik paketi</li>
+        </ol>
+        <hr>
+        <hr>
+        <h6>Resimler</h6>
+        <p>Bugüne kadar yaptigimiz projeleri gosteren resim galerimize hosgeldiniz.</p>
+        <img src="../IMG/394F078928C0B1B88E4E3F198E357140.png" width="200" height="200" alt="RESIM YOK">
+        <!-- alt="" seklinde birakirsak site görüntüyü acamadigi durumalrda goruntunun onemi olmadigini belirtir. Eger hic alt bilgisi girmezsek o zaman goruntuyu gosteremediginde tanimlayacak kelime yok anlamina gelir. eger alt yazip iicne bir tanimlama yazarsak bu resim goruntulenmediginde resmi tanimlayan metindir.-->
+        <img src="../IMG/394F078928C0B1B88E4E3F198E357140.png" width="200" height="200"
+            alt="Eger resmi görüntüleyemiyorsaniz cookieleri kabul edin ve tekrar deneyin">
+        <img src="../IMG/394F078928C0B1B88E4E3F198E357140.png" width="200" height="200" alt="Resim goruntulenemiyor">
+        <!--./ ayni seviyede yan yana yazi veya resim dosya, ../ bir ust seviyede-->
+        <!--Örnegin yeni.html dosyasi eger JS nin icinde olsaydi en basa ../ yapmam gerekirdi IMG dosyasindaki resmi bulmak icin-->
+        <!-- eger iki dosya üstte ise iki kez en basta ../../ yapmam gerekirdi -->
+        <br><br><br><br>
+        <h7 style="font-size: large;">Yillara göre gaz emisyonlari</h7>
+        <!-- h7 yeni bir baslik türü(Boyut h6 dan büyük yazi türü önceki 6 basliga göre farkli)-->
+        <fieldset><!--tobaloyu normal sayfadan ayiran bir yapi oluturup daha güyel gorunmesini saglar-->
+            <legend>CEVRE PROJESI EMSIYON DEGERLERI</legend><!--fieldset kismina baslik ekler-->
+            <table border="2" width="80%">
+                <thead>
+                    <!-- bu kisim SEO icin onemli-->
+                    <caption><b>BAZI ULKELERIN YILLARA GÖRE EMISYON DEGISIMI</b></caption>
+                    <tr>
+                        <th>Ülkeler</th>
+                        <th>2010</th>
+                        <th>2015</th>
+                        <th>2020</th>
+                    </tr>
+                    <tr>
+                        <th>Almanya</th>
+                        <td>300</td>
+                        <td>500</td>
+                        <td>800</td>
+                    </tr>
+                    <tr>
+                        <th>Türkiye</th>
+                        <td>1000</td>
+                        <td colspan="2">800</td>
+                        <!-- 2 kac tane satiri birlestirecegini belirliyor. colspan satir birlestirme komutu-->
+                    </tr>
+                    <tr>
+                        <th>Ingiltere</th>
+                        <td rowspan="2">700</td>
+                        <!-- Sütün birlestirme komutu. 2 yazarsak 2 sütün birlesecek bir sonrakiyle-->
+                        <td>900</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <th>Japonya</th>
+                        <td>750</td>
+                        <td>1100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <p>kaynakalar</p>
+        <a href="http://www.google.com">google sayfasina git</a>
+        <a href="http://www.google.com" target="_blank">google sayfasina git</a><br>
+        <!-- target blank yapinca yeni sekmede acar. target diger kullanimlaru varsa ögren-->
+        <a href="http://www.google.com" target="_blank"><img src="../IMG/394F078928C0B1B88E4E3F198E357140.png" width="50"
+                height="50" alt="resim gösterilemiyor"></a>
+        <div id="header" class="" style="font-size: large; color: aqua;">
+            <!-- bu blok halinde bilgi girilecekse div kullanilir. sadece bir yazi girdisi icin p -->
+            <h2>DIV ÖRNEGI</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi magni maiores accusamus error in laborum
+                distinctio quidem. Adipisci, quibusdam error.</p>
+        </div>
+        <h2>SPAN ÖRNEGI</h2>
+        <p>Lorem <span style="font-size: large;">EN BÜYÜK FENER</span> ipsum dolor sit amet <span
+                style="color:brown ">COK ONEMLI</span> consectetur adipisicing elit. Cum ullam, architecto molestias
+            natus adipisci consequatur repellendus incidunt repudiandae accusantium quibusdam?</p>
+        <hr>
+        <hr>
+        <hr>
+        <!-- span yazida degisiklik icin kullanilabilir, kopmle bir cok giridyi baslikla beraber degistirmek icin div-->
+        <h2>NON SEMANTIC ELEMENTLER</h2>
+        <div id="header">
+            <div id="menü">
+                <ol>
+                    <li>Anasayfa</li>
+                    <li>Ürünler</li>
+                    <li>Projeler</li>
+                    <li>Hakkimizda</li>
+                    <li>Üye ol</li>
+                    <ol>
+                        <li>Kayit Ol</li>
+                        <li>Giris Yap</li>
+                    </ol>
+                </ol>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Dersler</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis reprehenderit porro, eligendi eum dolor
+                enim quibusdam error non. Blanditiis fugit maiores provident dignissimos est nisi voluptatibus explicabo
+                dicta quae asperiores?
+                Tempore quod a dignissimos et eaque magni consequatur temporibus facere blanditiis quae laudantium
+                recusandae dicta alias rem, porro unde in fugit deleniti autem ratione sint magnam voluptatem. Labore,
+                quisquam consectetur!
+                Iste minus quidem ipsa nisi dolorum voluptas, expedita tenetur non possimus quam sit voluptates dolores!
+                Cum velit harum ipsum vel repudiandae quasi perspiciatis minus. Consequatur iure delectus cupiditate a
+                excepturi.</p>
+        </div>
+        <div id="footer">
+            <p>&copy; Tüm haklari saklidir</p>
+        </div>
+</body>
+<hr>
+<hr>
+<hr>
+<h2>SEMANTIK ELEMENLER</h2>
+<header>
+    <nav>
+        <ol>
+            <li>Anasayfa</li>
+            <li>Ürünler</li>
+            <li>Projeler</li>
+            <li>Hakkimizda</li>
+            <li>Üye ol</li>
+            <ol>
+                <li>Kayit Ol</li>
+                <li>Giris Yap</li>
+            </ol>
+        </ol>
+    </nav>
+</header>
+<main>
+    <h2>Dersler</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis reprehenderit porro, eligendi eum dolor enim
+        quibusdam error non. Blanditiis fugit maiores provident dignissimos est nisi voluptatibus explicabo dicta quae
+        asperiores?
+        Tempore quod a dignissimos et eaque magni consequatur temporibus facere blanditiis quae laudantium recusandae
+        dicta alias rem, porro unde in fugit deleniti autem ratione sint magnam voluptatem. Labore, quisquam
+        consectetur!
+        Iste minus quidem ipsa nisi dolorum voluptas, expedita tenetur non possimus quam sit voluptates dolores! Cum
+        velit harum ipsum vel repudiandae quasi perspiciatis minus. Consequatur iure delectus cupiditate a excepturi.
+    </p>
+</main>
+<form action="./register.jsp" method="GET">
+    <!-- Method kismi get veya post olabilir post daha güvenli-->
+    <input type="text" required autofocus autocomplete="name" placeholder="Adinizi giriniz"><br>
+    <!-- autofocus sayfaya girince direk imlecin yanacagi yeri gpsterir-->
+    <input type="text" placeholder="Soyadinizi giriniz"><br>
+    <!--placeholder input in icinde yazi yazmayi saglar-->
+    <input type="password" required placeholder="Sifrenizi giriniz">
+    <!-- type password yazilan sifrenin gozukmeemsini saglar-->
+    <input type="number" required placeholder="Kimlik numranizi giriniz" min="10000000000" max="99999999999"
+        step="2"><br>
+    <!--required yazarsaniz yazdiginiz input girilmesi zorunlu alan olarak belirlenir
+    ayrica step oka basinca kac numara atlayarak gidecegini belirler. kimlik no hep cift haneli oldugu icin 2 secildi-->
+    <input type="date" placeholder="Dogum tatihinizi giriniz."><br>
+    <p>Hobileriniz Nelerdir?</p>
+    <hr>
+    Kitap <input type="checkbox"> Spor <input type="checkbox"> Müzik <input type="checkbox"><br><br>
+    <!--checkbox isaret kutusu koymamizi saglar-->
+    <a href="http://www.google.com" target="_blank"><input type="button"
+            value="GOOGLE A GITMEK ICIN BUTONA BASIN"></a><br><br>
+    <!-- type button özelligi buton koyar ve ben burada link te ekledim ve basinca google a yönlendirdim-->
+    Cinsiyetiniz: Bay <input type="radio" name="cinsiyet"> Bayan <input type="radio" name="cinsiyet"><br><br>
+    <!-- burada radio secenegi yuvarlak check isareti koyar iki tarafada ayni name i yazarsaniz kisi sadece birini secebilir.-->
+    <input type="datetime-local" placeholder="Tarihi giriniz"><br>
+    <input type="datetime" placeholder="Tarihi giriniz"><br>
+    <input type="email" placeholder="Mailinizi girin."><br><br>
+    <input type="file"><br><br>
+    <!--dosya yükleme sistemi olusturur-->
+    <input type="hidden"><!-- bir satir bos oluyor -->
+    <input type="image" src="../IMG/394F078928C0B1B88E4E3F198E357140.png" width="50" height="20" alt="resim yok"><br>
+    <input type="month" placeholder="Bulundugumuz ayi giriniz"><br>
+    <input type="range" max="100"><br><!-- range skala olsuturur örnegin 0-100 arasi ileri geri skala-->
+    <input type="search" placeholder="Aranacak kelimeyi giriniz." name="" id=""><br>
+    <!--search cubugu-->
+    <input type="tel" placeholder="Telefon numaranizi giriniz"><br>
+    <!--yalnizca numara girebileceginiz alan olsturur-->
+    <input type="time" placeholder="Zamani giriniz"><br>
+    <input type="url" placeholder="Siteyi giriniz" name="" id=""><br>
+    <input type="week" placeholder="Bulundugumuz haftayi giriniz"><br>
+    <input type="submit" formnovalidate value="DOGRULAMA">
+    <input type="submit" formaction="save" value="KAYDET">
+    <input type="submit" formtarget="_blank" value="TAB/WINDOW"><br><br>
+    Bulundugunuz sehir:
+    <select name="" id="">
+        <!-- secmeli sekme yapisi ekler-->
+        <option value=""></option>
+        <option value="">Istanbul</option>
+        <option value="">Ankara</option>
+        <option value="">Izmir</option>
+        <option value="">Tokat</option>
+    </select><br><br>
+    Daha önce bulunudugunuz sehirler: <br>
+    <select name="" id="" multiple>
+        <!-- multiple komutu birden fazla secenegi isaretlememizi saglar-->
+        <option value="">Istanbul</option>
+        <option value="">Ankara</option>
+        <option value="">Izmir</option>
+        <option value="">Tokat</option>
+        <option value="">Antalya</option>
+        <option value="">Bursa</option>
+    </select><br><br>
+    <input type="reset" value="Temizle">
+    <!--girilen tüm bilgileri sifirlar-->
+    <input type="submit" value="Gönder"><br>
+    <!--girilen bilgileri gonderir.-->
+</form>
+<video width="800" height="600" controls>
+    <!--video ekleme controls secenegi video controllerini ekler ses tam ekran gibi-->
+    <source src="../video/IMG_4061 Kopie.MOV" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    <!--eger mp4 formati calismazsa ogg ye gecilir.-->
+</video>
+<video width="300" height="300" controls autoplay>
+    <!--aoutoplay sitede video üzerine geldiginizde kendiliginden baslamasini saglar-->
+    <source src="../video/IMG_4061 Kopie.MOV" type="video/mp4">
+    <source src="video.ogg" type="video/ogg">
+</video>
+<hr>
+<hr>
+<hr>
+<div style="text-align:center">
+    <button onclick="PlayPause()">Play/Pause</button>
+    <!--Onclick e isim verip sonradan scriptte ne yapacagini tanimliyoruz function kisminda-->
+    <button onclick="MakeBig()">Büyük</button>
+    <button onclick="MakeSmall()">Kücük</button>
+    <button onclick="MakeNormal()">Orta</button><br><br>
+    <video id="video1" width="500" height="500" controls>
+        <!-- buaradaki id ile script kisminda video tanimliycaz-->
+        <source src="../video/IMG_4061 Kopie.MOV" type="video/mp4">
+        <source src="../video/IMG_4061 Kopie.MOV" type="video/ogg">
+    </video>
+</div>
+<script>
+    var myVideo = document.getElementById("video1");
+
+    function PlayPause() {
+        if (myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+
+    function MakeBig() {
+        myVideo.width = 1200;
+    }
+
+    function MakeSmall() {
+        myVideo.width = 300;
+    }
+
+    function MakeNormal() {
+        myVideo.width = 600;
+    }
+</script>
+<br><br>
+<audio controls>
+    <!--audio girdisi mutlaka controls yazilmali yoksa calismaz-->
+    <source src="../video/IMG_4061 Kopie.MOV" type="audio/ogg">
+    <!-- ses olmadigi icin video ekledim ses eklersem calisacak-->
+    <source src="audio.mp3" type="audio/mp3">
+</audio>
+<br><br><br>
+
+<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" width="400" height="400"></iframe><br>
+<iframe src="http://www.hamitmizrak.com" width="400" height="400" frameborder="0"></iframe><br>
+<!-- i frame yapisi  internetten site veya video cekmek icin kullanilir.-->
+
+<footer>
+    <p>&copy; Tüm haklari saklidir</p><!-- $copy; yapisi r isareti icin kullanilir-->
+</footer>
+
+
+</html>

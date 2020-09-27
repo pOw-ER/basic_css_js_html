@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayit Ol</title>
+    <style>
+        div {
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 20px;
+            margin-right: 800px;
+            margin-left: 100px;
+        }
+        input[type=submit]:hover {
+            background-color: lightblue;
+        }
+        input[type=reset]:hover {
+            background-color: lightblue;
+        }
+        input[type=button]:hover {
+            background-color: lightblue;
+        }
+        input[type=reset] {
+            width: 32.5%;
+            background-color: rgb(0, 128, 75);
+        }
+        input[type=button] {
+            width: 32.5%;
+            background-color: rgb(0, 128, 75);
+        }
+        input[type=submit] {
+            width: 32.5%;
+            background-color: rgb(0, 128, 75);
+        }
+        input, select {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 12px 20px;
+            margin: 10px 0px;
+            display: inline-block; /* block halinde asagi dogru gosterir*/
+            cursor: pointer; /* el ikonu cikar ustune gelince*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Üye Bilgi ve Kayit Formu</h1>
+    <div>
+        <form action="./" method="POST">
+            <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;" for="name">Isminizi giriniz</label>
+            <input type="text" name="firstname" id="name" required autofocus placeholder="Adiniz"><br>
+            <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;" for="sname">Soyadinizi giriniz</label>
+            <input type="text" name="surname" id="sname" required placeholder="Soyadiniz"><br>
+            <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;" for="bdate">Dogum tarihinizi giriniz</label>
+            <input type="date" name="date" id="bdate" required placeholder="Dogum tarihiniz"><br>
+            <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;" for="mail">Mail adresinizi giriniz</label>
+            <input type="email" name="mail" id="mail" required placeholder="Mail adresiniz"><br>
+            <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;" for="sex">Cinsiyetinizi belirtiniz</label><br><br>
+            Bay <input type="radio" name="sex" id="sex" required> Bayan <input type="radio" name="sex" id="sex"
+                required><br>
+            <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;" for="country">Yasadiginiz ülkeyi seciniz.</label>
+            <select name="country" id="country" required aria-placeholder="Ülke">
+                <option value="">seciniz</option>
+                <option value="">Almanya</option>
+                <option value="">Fransa</option>
+                <option value="">Ingiltere</option>
+                <option value="">Amerika</option>
+                <option value="">Türkiye</option>
+                <option value="">Hollanda</option>
+                <option value="">Cin</option>
+                <option value="">Rusya</option>
+            </select><br>
+            <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;" for="town">Yasadiginiz sehri giriniz.</label>
+            <input type="text" name="town" id="town" required placeholder="Sehir"><br>
+            <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;" for="password">Sifrenizi giriniz</label>
+            <input type="password" name="password" id="password" required placeholder="Sifre"><br>
+            <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;" for="repassword">Sifrenizi tekrar giriniz</label>
+            <input type="password" name="repassword" id="repassword" required placeholder="Sifre tekrari"><br>
+            <input type="reset" value="Temizle">
+            <input type="submit" value="Gönder">
+            <a href="./yeni.html"><input type="button" value="ANASAYFAYA DÖN"></a>
+        </form>
+    </div>
+</body>
+
+</html>

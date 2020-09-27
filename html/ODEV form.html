@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODEV FORM</title>
+</head>
+
+<body style="margin-left: 500px;">
+    <fieldset>
+        <legend style="font-size: 24px;">Kullanici Girisi</legend>
+        <table width="80%">
+            <thead>
+                
+            </thead>
+            <tbody>
+                <form action="./" method="POST">
+                    <tr>
+                        <td style="text-align: right;"><label for="name">Adinizi giriniz</label></td>
+                        <td><input type="text" name="name" id="name" required autofocus placeholder="Adiniz"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;"><label for="surnam">Soyadinizi giriniz</label></td>
+                        <td><input type="text" name="surnam" id="surnam" required placeholder="Soyadiniz"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;"><label for="password">Sifrenizi giriniz</label></td>
+                        <td><input type="password" name="password" id="password" required placeholder="Sifreniz"></td>
+                    </tr>
+                    <tr><br>
+                        <td></td>
+                        <td colspan="3"><a href="./register.html" target="_blank"><input type="button" value="Kayit Ol"></a>
+                        <input width="30" height="10" type="reset" value="Temizle">
+                        <input type="submit" value="Giris Yap"></td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+    </fieldset>
+</body>
+
+</html>
